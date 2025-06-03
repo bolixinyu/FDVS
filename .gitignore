@@ -1,0 +1,9 @@
+**/.ipynb_checkpoints
+**/.ipynb_checkpoints/*
+result
+resultWithTime
+*__pycache__
+.vscode
+data/captions*
+tmp
+m_result
