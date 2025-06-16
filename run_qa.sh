@@ -1,1 +1,0 @@
-CUDA_VISIBLE_DEVICES=$1 /opt/conda/bin/python -m torch.distributed.run --nproc_per_node $2 --nnodes 1 --master_port $3 video_qa.py
