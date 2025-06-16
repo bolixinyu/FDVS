@@ -1,0 +1,33 @@
+# Method Details
+## Efficient Keyframe-based Video Segmentation
+- Uses intra-frames as keyframes for accurate scene segmentation
+
+- Divides videos into clips based on keyframes
+
+- Samples 8 frames per clip (with redundancy reduction)
+
+## Visual Semantic Redundancy Reduction
+- Removes redundant frames within clips using CLIP visual features
+
+- Computes cosine similarity between frames and keyframes
+
+- Eliminates frames with similarity above average threshold
+
+## Perception-based Prompt Generation
+Employs three-level perception models:
+
+- Object level: GroundingDINO for object detection
+
+- Temporal level: InternVideo for action recognition
+
+- Scene level: BLIP2 for image captioning
+
+![img](./imgs/perception.png)
+*Figure 2: Three-level perception model architecture*
+
+## Textual Semantic Redundancy Reduction
+- Uses Sentence-BERT to encode clip descriptions
+
+- Removes redundant clips based on semantic similarity
+
+- Maintains local memory of recent clips (optimal length=35)

@@ -1,0 +1,12 @@
+# Method Overview (FDVS)
+
+We propose **Fine-Detailed Video Story generation (FDVS)**, a novel framework for long video understanding that converts videos into hierarchical textual representations. FDVS addresses two key challenges in long video understanding: complex long-context relationship modeling and interference from redundancy. Our method achieves state-of-the-art performance across multiple video understanding tasks without requiring task-specific fine-tuning.
+![img](./imgs/method.png)
+*Figure 1: General pipeline of our method. We extract hierarchical textual representations from videos through a bottom-up interpretation mechanism.*
+
+## Key Contributions
+1. Bottom-up Video Interpretation Mechanism: Progressively interprets video content from clips to full video, enabling comprehensive understanding of long videos.
+
+2. Semantic Redundancy Reduction: Eliminates redundant information at both visual and textual levels to improve efficiency and accuracy.
+
+3. Hierarchical Textual Representations: Generates multi-granularity descriptions (clip chapters and full video stories) that are interpretable and applicable to various downstream tasks.
