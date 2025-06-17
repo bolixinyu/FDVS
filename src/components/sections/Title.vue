@@ -84,7 +84,7 @@ const addresses = [
   },
   {
     address_flag: "5",
-    name: "Shenzhen University",
+    name: "Harbin Institute of Technology",
     icon: "./institute_logo/hit.png",
     homepage: "https://www.hit.edu.cn/"
   },

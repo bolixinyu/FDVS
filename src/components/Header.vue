@@ -11,7 +11,7 @@ const home = {
 
 // 项目主页
 const logo = {
-    name: "Template",
+    name: "FDVS",
     link: "#",
 }
 
